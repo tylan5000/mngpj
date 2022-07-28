@@ -1,0 +1,7 @@
+ALTER TABLE `fjsqn_webfujinet`.`tbstaff` 
+ADD COLUMN `WorkFromDate` VARCHAR(8) NULL AFTER `IndRegID`,
+ADD COLUMN `WorkEndDate` VARCHAR(8) NULL AFTER `WorkFromDate`;
+
+ALTER TABLE `fjsqn_webfujinet`.`tbstaff` 
+DROP COLUMN `IndRegID`,
+DROP COLUMN `IP`;
